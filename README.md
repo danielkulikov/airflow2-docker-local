@@ -11,7 +11,9 @@
 
 2. Folders & Permissions requirements
 `mkdir ./docker/logs ./plugins ./docker/data`
+
 `chmod -R 0775 ./docker/logs ./docker/data`
+
 `chmod +x ./airflow.sh`
 
 3. First time Init, database migration and create the first user account. 
@@ -28,6 +30,7 @@
 
 - Rebuild docker configuration
 `docker-compose down`
+
 `docker-compose up --build`
 
 - Cleaning UP all containers:
