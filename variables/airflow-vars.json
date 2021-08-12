@@ -1,0 +1,6 @@
+{
+    "adw_data_dataset":"abb_adw_ods_data",
+    "adw_tmp_dataset":"abb_adw_stg_data",
+    "adw_bucket":"cogeco-abb-adw-dev_adw-export",
+    "awd_allowed_file_delay_hours": 3
+}  
