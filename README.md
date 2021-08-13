@@ -9,7 +9,8 @@
 
 1. Clone the repo and navigate in to the working directory
 
-2. Folders & Permissions requirements
+2. Folders & Permissions requirements:
+
 `mkdir ./docker/logs ./plugins ./docker/data`
 
 `chmod -R 0775 ./docker/logs ./docker/data`
@@ -60,3 +61,11 @@
   - Add variables to Airflow `variables\airflow-vars.json` file
   - Add variables to Docker containers `variables\docker-env-vars` file
   - If there is a custom Airflow configuration file ready, uncomment the line in Dockerfile in order to include it in the image: `COPY airflow.cfg ${AIRFLOW_HOME}/airflow.cfg`
+
+## Import variables from local ENV -- hiding secrests ## 
+- on a local machine `export VAR1='value'`
+
+- add a variable to the `variables\docker-env-vars` file:
+
+`VAR1=${VAR1}`, for example `AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}`, where 
+
