@@ -67,5 +67,5 @@
 
 - add a variable to the `variables\docker-env-vars` file:
 
-`VAR1=${VAR1}`, for example `AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}`, where 
+`VAR1=${VAR1}`, for example `AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}`
 
